@@ -27,5 +27,5 @@
     private function __clone() {}
   }
 
-  Database::getInstance();
+  $db = Database::getInstance();
 ?>
