@@ -19,7 +19,7 @@
 
     public static function getInstance(){
       if (self::$instance === null) {
-          self::$instance = new DataBase();
+        self::$instance = new DataBase();
       }
       return self::$instance;
     }
