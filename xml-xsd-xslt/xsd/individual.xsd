@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="report">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="subject" type="xs:string"/>
+        <xs:element name="client">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="surname" type="xs:string"/>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="patronymic" type="xs:string"/>
+              <xs:element name="dateBirth" type="xs:string"/>
+              <xs:element name="inn" type="xs:integer"/>
+              <xs:element name="passport">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="serial" type="xs:integer"/>
+                    <xs:element name="number" type="xs:integer"/>
+                    <xs:element name="dateIssue" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
