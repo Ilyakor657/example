@@ -57,12 +57,12 @@
       $surname = $xml->createElement("surname", "Иванов");
       $name = $xml->createElement("name", "Иван");
       $patronymic = $xml->createElement("patronymic", "Иванович");
-      $dateBirth = $xml->createElement("dateBirth", "01.01.2001");
+      $dateBirth = $xml->createElement("dateBirth", "2001-01-01");
       $inn = $xml->createElement("inn", 1234567890);
       $passport = $xml->createElement("passport");
       $serial = $xml->createElement("serial", 1234);
       $number = $xml->createElement("number", 123456);
-      $dateIssue = $xml->createElement("dateIssue", "01.01.2001");
+      $dateIssue = $xml->createElement("dateIssue", "2001-01-01");
       $client->appendChild($surname);
       $client->appendChild($name);
       $client->appendChild($patronymic);

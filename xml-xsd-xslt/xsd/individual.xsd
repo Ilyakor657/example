@@ -10,14 +10,40 @@
               <xs:element name="surname" type="xs:string"/>
               <xs:element name="name" type="xs:string"/>
               <xs:element name="patronymic" type="xs:string"/>
-              <xs:element name="dateBirth" type="xs:string"/>
-              <xs:element name="inn" type="xs:integer"/>
+              <xs:element name="dateBirth">
+                <xs:simpleType>
+                  <xs:restriction base="xs:date"/>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="inn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:pattern value="\d{10}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="passport">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:element name="serial" type="xs:integer"/>
-                    <xs:element name="number" type="xs:integer"/>
-                    <xs:element name="dateIssue" type="xs:string"/>
+                    <xs:element name="serial">
+                      <xs:simpleType>
+                       <xs:restriction base="xs:string">
+                           <xs:pattern value="\d{4}"/>
+                       </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="number">
+                    <xs:simpleType>
+                       <xs:restriction base="xs:string">
+                           <xs:pattern value="\d{6}"/>
+                       </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="dateIssue">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:date"/>
+                      </xs:simpleType>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>

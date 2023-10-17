@@ -1,7 +1,7 @@
 <?php
   require_once 'factory.php';
 
-  $subject = "legal";
+  $subject = "legal";//individual legal
 
   $xml = new DOMDocument();
   $xml->formatOutput = true;

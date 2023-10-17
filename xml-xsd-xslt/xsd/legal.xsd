@@ -10,7 +10,13 @@
               <xs:element name="surname" type="xs:string"/>
               <xs:element name="name" type="xs:string"/>
               <xs:element name="patronymic" type="xs:string"/>
-              <xs:element name="inn" type="xs:integer"/>
+              <xs:element name="inn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:pattern value="\d{10}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -18,16 +24,40 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="nameOrg" type="xs:string"/>
-              <xs:element name="ogrn" type="xs:integer"/>
-              <xs:element name="innOrg" type="xs:integer"/>
-              <xs:element name="kpp" type="xs:integer"/>
+              <xs:element name="ogrn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:pattern value="\d{10}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="innOrg">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:pattern value="\d{10}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="kpp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                      <xs:pattern value="\d{10}"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
               <xs:element name="address">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="region" type="xs:string"/>
                     <xs:element name="city" type="xs:string"/>
                     <xs:element name="street" type="xs:string"/>
-                    <xs:element name="house" type="xs:integer"/> 
+                    <xs:element name="house">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[0-9]+"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element> 
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
