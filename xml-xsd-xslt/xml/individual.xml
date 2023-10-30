@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<report>
+  <subject>individual</subject>
+  <client>
+    <surname>&#x418;&#x432;&#x430;&#x43D;&#x43E;&#x432;</surname>
+    <name>&#x418;&#x432;&#x430;&#x43D;</name>
+    <patronymic>&#x418;&#x432;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x447;</patronymic>
+    <dateBirth>2001-01-01</dateBirth>
+    <inn>1234567890</inn>
+    <passport>
+      <serial>1234</serial>
+      <number>123456</number>
+      <dateIssue>2001-01-01</dateIssue>
+    </passport>
+  </client>
+</report>

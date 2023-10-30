@@ -8,6 +8,7 @@
   $root = $xml->createElement("report");
   $xml->appendChild($root);
   SubjectFactory::createSubject($xml, $root, $subject);
+  $xml->save('xml/'.$subject.'.xml');
 
   $xslt = new DOMDocument();
   $xslt->load("xslt/report.xslt");
