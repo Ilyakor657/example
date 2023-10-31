@@ -3,7 +3,7 @@ require_once 'factory.php';
 
 $subject = "legal";//individual legal
 
-$xml = new DOMDocument();
+$xml = new DOMDocument('1.0', 'UTF-8');
 $xml->formatOutput = true;
 $root = $xml->createElement("report");
 $xml->appendChild($root);

@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <report>
   <subject>individual</subject>
   <client>
-    <surname>&#x418;&#x432;&#x430;&#x43D;&#x43E;&#x432;</surname>
-    <name>&#x418;&#x432;&#x430;&#x43D;</name>
-    <patronymic>&#x418;&#x432;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x447;</patronymic>
+    <surname>Иванов</surname>
+    <name>Иван</name>
+    <patronymic>Иванович</patronymic>
     <dateBirth>2001-01-01</dateBirth>
     <inn>1234567890</inn>
     <passport>
